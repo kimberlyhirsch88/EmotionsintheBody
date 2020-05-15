@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card" style="font-family: 'proxima-nova', sans-serif; color: #444444;">
+    <a href="index.html" class="w3-bar-item w3-button"><b>EMOTIONS</b> in the human body</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#vizualization" class="w3-bar-item w3-button">Vizualization</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="Landing Page.png" alt="Architecture" width="1500" height="800">
+</header>
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <img class="w3-image" src="Banner.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="motivation.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="viz3.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="4elements.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="Distribution.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="Quote.png" alt="Architecture" width="1000" height="500">
+    <img class="w3-image" src="Intro.png" alt="Architecture" width="1000" height="500">
+  </div>
+
+
+  <br><br><br>
+  <div class="w3-container w3-padding-32" style="background-color: #9BBFF9; width: 1500px;  height: 10px; display: block;margin-left: auto;margin-right: auto">
+  </div>  
+<!-- Image of location/map -->
+<div class="w3-container w3-padding-32" id="vizualization">
+  <div class="iframe" style="width: 1000px; height: 700px; overflow: hidden">
+  <iframe style="border: none; position: relative; right: 50px; bottom: 250px;" width="1100" height="1200" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fx9d7y7P7peg78rBajTxOzj%2FBodyMap-AllConnected%3Fnode-id%3D246%253A257%26scaling%3Dscale-down"></iframe>
+</div>
+</div>
+
+
+
+
+<!-- End page content -->
+</div>
+
+<br><br>
+<h1 style= "text-align: center; font-family: 'proxima-nova', sans-serif;  color: #444444;">What Sensations Do People Feel?</h1>
+  <p style= "text-align: center; font-family: 'proxima-nova', sans-serif;  color: #444444;">View the raw reported physiological reactions for each emotion.<br>Are these reactions similar to what you may feel?
+    <br><br>Try comparing the shapes of the "positive" and "negative" emotions!
+    <br>You may notice similar reactions were reported for Grateful & Enthusiastic and Frustrated & Discouraged. 
+    <br>Simimilarly charged emotions are more likely to occur at the same time and elicit similar reactions. 
+  </p>
+
+  <div class="w3-container w3-padding-32" style="width: 650px; height: 650px; margin: auto;" id="radarChartToggle">
+<br><br><br>
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction2()">
+    <span class="slider round"></span>
+  </label>
+  <p style="display:inline; color:#FF737F;">Discouraged</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction3()">
+    <span class="slidergreen round"></span>
+  </label>
+  <p style="display:inline; color:#86D69D;">Frustrated</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction4()">
+    <span class="sliderblue round"></span>
+  </label>
+  <p style="display:inline; color:#66C8FF;">Grateful</p>
+  
+  <label class="switch">
+    <input type="checkbox" checked onclick="myFunction()">
+    <span class="slideryellow round"></span>
+  </label>
+  <p style="display:inline; color:#FFD752;">Enthusiastic</p>
+<br><br>
+<div id="myDIV">
+  <img class="w3-image" style="position: absolute" src="yellow.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV2">
+  <img class="w3-image" style="position: absolute" src="red.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV3">
+  <img class="w3-image" style="position: absolute" src="green.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV4">
+  <img class="w3-image" style="position: absolute" src="blue.png" alt="Architecture" width="650" height="600">
+</div>
+
+<div id="myDIV5">
+  <img class="w3-image" style="position: absolute" src="none.png" alt="Architecture" width="650" height="600">
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction4() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<h1 style= "text-align: center; font-family: 'proxima-nova', sans-serif;  color: #444444;">Explore More!</h1>
+<p style= "text-align: center; font-family: 'proxima-nova', sans-serif;  color: #444444;">Zoom in to see which body parts are commonly assoicated with each sensation within each emotion.
+  <br>Hover over to see each percentage breakdown!
+  <br><br>People reported feeling a greater amount of reactions for "negative" emotions such as frustrated and discouraged.
+  <br>Why do you think this is? Do you normally experience more intense reactions to negative emotions compared to positive ones?
+<br><br>Click the center circle to zoom back out!</p>
+<div class="w3-container w3-padding-32" style="max-width: 600px; display: block;margin-left: auto;margin-right: auto">
+<div id="observablehq-7fd0481d"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@khirsch/zoomable-sunburst.js?v=3";
+const inspect = Inspector.into("#observablehq-7fd0481d");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script>
+</div>
+<br><br><br>
+<h1 style= "text-align: center; font-family: 'proxima-nova', sans-serif;  color: #444444;">Which Parts of the Body Experience the Most Reactions?</h1>
+<img class="w3-image" src="BodyParts.png" alt="Architecture" width="1200" height="500">
+ <br><br><br>
+<div class="w3-container w3-padding-32" style="background-color: #9BBFF9; width: 1500px;  height: 10px; display: block;margin-left: auto;margin-right: auto">
+</div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <img class="w3-image" src="Wrapup.png" alt="Architecture" width="1200" height="500">
+    <img class="w3-image" src="ending.png" alt="Architecture" width="1000" height="500">
+    <div class="w3-container w3-padding-32" style="background-color: #9BBFF9; width: 1500px; display: block;margin-left: auto;margin-right: auto">
+    <img class="w3-image" src="About1.png" alt="Architecture" width="1000" height="500">
+  </div>
+    <img class="w3-image" src="About.png" alt="Architecture" width="1000" height="500">
+  </div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="https://github.com/kimberlyhirsch88/Emotions" class="w3-bar-item w3-button">Github</a>
+  <a href="https://github.com/kimberlyhirsch88/Emotions" class="w3-bar-item w3-button">Full Project Documentation</a>
+  <a href="index.html" class="w3-bar-item w3-button">Top of Page</a>
+  
+</footer>
+<!--<script src= "main.js" type="text/javascript" ></script>-->
+</body>
+</html>
+
